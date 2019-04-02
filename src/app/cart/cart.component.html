@@ -1,5 +1,5 @@
-<h1>{{prod.price}}</h1>
-
+<div class="date">{{date}}</div>
+<div class="time">{{time}}</div>
 
 <div class="shopping-cart">
   <!-- Title -->
@@ -15,7 +15,7 @@
     </div>
 
     <div class="image">
-      <img src="../../assets/imges/{{pro.product.imgUrl}}"    width="100px" height="100px" alt="" />
+      <img src="../../assets/imges/{{pro.product.imgUrl}}" width="100px" height="100px" alt="" />
     </div>
 
     <div class="description">
@@ -30,28 +30,25 @@
 
       <input type="text" name="name" value={{pro.quntity}}>
 
-      <button class="plus-btn" (click)="changeQuntity(pro.product.id , 'plus')"  type="button" name="button">
+      <button class="plus-btn" (click)="changeQuntity(pro.product.id , 'plus')" type="button" name="button">
         <img src="https://designmodo.com/demo/shopping-cart/plus.svg" alt="" />
       </button>
     </div>
 
-    <div class="total-price">${{pro.product.price * pro.quntity}}</div>
+    <div class="total-price">{{pro.product.price * pro.quntity}}$</div>
   </div>
 
-<h1>{total}</h1>
+<div class="toatl-sum">{{total}}$</div>
 
   <div class="item">
-
+    
     <div class="continue">
+      
       <span>
-        
+
         <a [routerLink]="['/']">continue shopping</a>
 
       </span>
     </div>
 
   </div>
-
-
-
-</div>

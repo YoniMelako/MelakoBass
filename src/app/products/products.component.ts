@@ -15,7 +15,6 @@ export class ProductsComponent implements OnInit {
   constructor(private service: ProductService, private DataService: dataService) {
 
     setInterval(() => { this.time = this.service.getTime(); }, 1000);
-    console.log(this.products$);
   }
 
  @Output() products$: Product[];

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'digital';
+    src: url('./assets/digital-7.ttf');
+}
+
+.time {
+    font-family:'digital';
+    font-weight: 600;
+    
+}
+.date{
+    font-family: monospace
+}

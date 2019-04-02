@@ -13,7 +13,7 @@
   .shopping-cart {
     width: 750px;
     height: 100%;
-    margin: 80px auto;
+    margin: 40px auto;
     background: #FFFFFF;
     box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
     border-radius: 6px;
@@ -222,4 +222,9 @@
       box-shadow: 0 14px 25px 0px rgba(0, 0, 0, 0.1);
   }
   .continue:hover{cursor: pointer}
+
+  .toatl-sum
+  {
+    text-align: -webkit-center;
+}
  

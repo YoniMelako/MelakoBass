@@ -15,14 +15,18 @@ export class CartComponent implements OnInit {
 
   private cartitems: CartItem[] = [];
   
+  date;
+  time;
   total: number ;
   prod: Product;
  
 
-  constructor(private activeRout: ActivatedRoute, private DataService: dataService) { }
+  constructor(private activeRout: ActivatedRoute, private DataService: dataService,private service: ProductService) { 
+    setInterval(() => { this.time = this.service.getTime(); }, 1000);
+  }
 
   ngOnInit() {
-
+    this.date = this.service.getdate();
     this.activeRout.params.subscribe(params => {
       var id = params['id'];
 
