@@ -1,0 +1,35 @@
+[
+    {
+        "_id": "5ca070d0377aa56af0ca3124",
+        "id": 1,
+        "name": "beat pro",
+        "imgUrl": "beat.jpg",
+        "price": 100,
+        "catName": "Professional Headphones"
+    },
+    {
+        "_id": "5ca0711f377aa56af0ca3125",
+        "id": 2,
+        "name": "classic JBL",
+        "imgUrl": "jbl.jpg",
+        "price": 82,
+        "catName": "Professional Headphones"
+    },
+    {
+        "_id": "5ca0713a377aa56af0ca3126",
+        "id": 3,
+        "name": "House Of Marley",
+        "imgUrl": "marley.jpg",
+        "price": 130,
+        "catName": "Professional Headphones"
+    },
+    {
+        "_id": "5ca0713d377aa56af0ca3127",
+        "id": 4,
+        "name": "Old School Marshel",
+        "imgUrl": "marshel.jpg",
+        "price": 75,
+        "catName": "Professional Headphones"
+    }
+]
+

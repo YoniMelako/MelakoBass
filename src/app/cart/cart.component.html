@@ -1,0 +1,57 @@
+<h1>{{prod.price}}</h1>
+
+
+<div class="shopping-cart">
+  <!-- Title -->
+  <div class="title">
+    Shopping Bag
+  </div>
+
+  <!-- Product #1 -->
+  <div *ngFor="let pro of cartitems" class="item">
+    <div class="buttons">
+      <span class="delete-btn"></span>
+      <span class="like-btn"></span>
+    </div>
+
+    <div class="image">
+      <img src="../../assets/imges/{{pro.product.imgUrl}}"    width="100px" height="100px" alt="" />
+    </div>
+
+    <div class="description">
+      <span>{{pro.product.catName}}</span>
+      <span>{{pro.product.name}}</span>
+    </div>
+
+    <div class="quantity">
+      <button class="minus-btn" (click)="changeQuntity(pro.product.id , 'minus')" type="button" name="button">
+        <img src="https://designmodo.com/demo/shopping-cart/minus.svg" alt="" />
+      </button>
+
+      <input type="text" name="name" value={{pro.quntity}}>
+
+      <button class="plus-btn" (click)="changeQuntity(pro.product.id , 'plus')"  type="button" name="button">
+        <img src="https://designmodo.com/demo/shopping-cart/plus.svg" alt="" />
+      </button>
+    </div>
+
+    <div class="total-price">${{pro.product.price * pro.quntity}}</div>
+  </div>
+
+<h1>{total}</h1>
+
+  <div class="item">
+
+    <div class="continue">
+      <span>
+        
+        <a [routerLink]="['/']">continue shopping</a>
+
+      </span>
+    </div>
+
+  </div>
+
+
+
+</div>
