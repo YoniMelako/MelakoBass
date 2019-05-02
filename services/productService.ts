@@ -11,17 +11,17 @@ export class ProductService {
 
     constructor() { }
 
-
+//return a local date
     public getdate() {
         return formatDate(Date.now(), 'dd/MM/yyyy', 'en-US');
     }
     time;
-
+//return a local time
     public getTime() {
         return this.time = formatDate(Date.now(), 'h:mm:ss/a', 'en-US');
     }
 
-
+//return static array of products
     public getproducts(): Product[] {
 
         return [{
@@ -57,7 +57,7 @@ export class ProductService {
 
 
     }
-
+//return a priduct from static array
     find(id: number): Product {
 
         return this.getproducts()[this.getSelectedIndex(id)];
