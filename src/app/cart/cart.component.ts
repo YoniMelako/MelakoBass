@@ -14,33 +14,34 @@ import { dataService } from 'services/dataservice';
 export class CartComponent implements OnInit {
 
   private cartitems: CartItem[] = [];
-  
+
   date;
   time;
-  total: number ;
+  total: number;
   prod: Product;
- 
 
-  constructor(private activeRout: ActivatedRoute, private DataService: dataService,private service: ProductService) { 
+
+  constructor(private activeRout: ActivatedRoute, private DataService: dataService, private service: ProductService) {
     setInterval(() => { this.time = this.service.getTime(); }, 1000);
   }
 
   ngOnInit() {
     this.date = this.service.getdate();
+
     this.activeRout.params.subscribe(params => {
       var id = params['id'];
 
 
       if (id) {
 
-      /*   this.DataService.getSingleProd(id).subscribe(data => {
-          if (data) {
-            this.prod = data;
-          }
-        }) */
+        /*   this.DataService.getSingleProd(id).subscribe(data => {
+            if (data) {
+              this.prod = data;
+            }
+          }) */
 
         var item: CartItem = {
-          product:this.DataService.findProduct(id),
+          product: this.DataService.findProduct(id),
           quntity: 1
 
         };
@@ -95,7 +96,7 @@ export class CartComponent implements OnInit {
 
 
 
-  
+
   loadCart(): void {
     this.total = 0;
     this.cartitems = [];
@@ -111,7 +112,7 @@ export class CartComponent implements OnInit {
       }
 
       this.total += item.product.price * item.quntity;
-     
+
     }
   }
 
