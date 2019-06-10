@@ -5,4 +5,5 @@ export class Product {
     imgUrl: string;
     price: number;
     catName: string;
+    
 }
