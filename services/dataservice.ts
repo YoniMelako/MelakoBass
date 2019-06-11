@@ -12,8 +12,8 @@ import { Promise } from 'q';
 
 export class dataService {
 
-    restapi = 'http://127.0.0.1:3000';
-    singleProdApi = 'http://127.0.0.1:3000/add/?id=';
+    restapi = 'https://deploytest-server.herokuapp.com';
+    singleProdApi = 'https://deploytest-server.herokuapp.com/add/?id=';
     products: Product[];
 
     constructor(private http: HttpClient) { this.getProductsData().subscribe(data => { this.products = data }); }
