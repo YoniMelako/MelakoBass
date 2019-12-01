@@ -1,22 +1,25 @@
 {
-  "name": "server",
+  "name": "shoppingserver",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "cors.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongodb": "^3.2.2"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YoniMelako/ShoopingCartServer.git"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "bcrypt": "^3.0.6",
-    "body-parser": "^1.19.0",
-    "cookie-parser": "^1.4.4",
-    "cors": "^2.8.5",
-    "express": "^4.17.0",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.5.10",
-    "nodemon": "^1.19.0",
-    "validator": "^10.11.0"
-  }
+  "bugs": {
+    "url": "https://github.com/YoniMelako/ShoopingCartServer/issues"
+  },
+  "homepage": "https://github.com/YoniMelako/ShoopingCartServer#readme"
 }
